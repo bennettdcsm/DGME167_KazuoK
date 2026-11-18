@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kazuo's Portfolio Site</title>
+<style>
+</style>
+<link href="master.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="grid960 cards">	
+<header>
+		<a href="#homelink"><img class="logo" src="images/logo01.png" alt="Logo of the website" /></a>
+		<h2 class="sitetitle" ></h2>
+</header>
+
+	
+<nav>
+	<ul>
+		<li><div class="dropdown"><a class="dropdown-btn" href="home.html">Home</a></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="about.html">About</a></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="works.html">My Works</a>
+        <div class="dropdown-content">
+			<h5>graphic designs</h5>
+            <a href="#link1">vinyl record jacket</a>
+            <a href="#link2">posters</a>
+            <a href="#link3">menu &amp;&nbsp;brochure</a>
+			<a href="#link3">magazine spread &amp;&nbsp;book covers</a>
+			<a href="#link3">branding</a>
+			<a href="#link3">product mockup</a>
+			<br>
+			<h5>others</h5>
+			<a href="#link3">acrylic paintings</a>
+			<a href="#link3">ui/ux</a>
+			<a href="#link3">video &amp; audio</a>
+	  </div></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="services.html">Services</a></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="contact.html">Contact</a></div></li>
+	</ul></nav>
+
+	
+
+<main class="fullcard">
+  <h2>Get in Touch!</h2>
+	<p>
+	
+		Please contact <a href="mailto:kkusumi@my.smccd.edu">me</a> for any inquiries.<br>
+		Email: kkusumi@my.smccd.edu
+	</p>
+	<br>
+	<hr>
+	<br>
+
+<section class="contact-section">
+  <div class="contact-intro">
+    <p class="contact-description">
+      Please feel free to fill out the form below and I will get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="0c7e4b3d-0683-4de5-83ce-4f897762f302" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label" >Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required/>
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone <small>(Optional)</small></label>
+        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+    </div>
+	  <div class="submitsection">
+    <button class="form-submit" type="submit">Send Message</button>
+	</div>
+  </form>
+
+</section>
+	
+</main>
+
+
+<footer>
+	<p class="footertext"></p>	
+</footer>
+	</div>
+</body>
+</html>
