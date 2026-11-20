@@ -169,6 +169,7 @@ a {
 	
 }
 
+/*
 .fullcard {
 	grid-column: span 12;
 	background: #fff;
@@ -238,7 +239,7 @@ a {
 	text-align: center;
 	color: #484848
 }
-
+*/
 
 .image-container {
 	grid-column: span 4;
@@ -296,18 +297,7 @@ footer {
 	content: "©2026 Kazuic Studio. All rights reserved.";
 }
 
-@media (max-width: 960px) {
-	.grid960 {
-		width: 100%; 
-		grid-template-columns: repeat(12, minmax(0,1fr));
-	}
-}
 
-@media (max-width: 600px) {
-	.cards .card {
-	grid-column: span 12;
-	}
-}
 /*
 	footer {
 		background-color: #333;
@@ -449,4 +439,15 @@ footer {
   background-color: #bc2030;
 }
 
+@media (max-width: 960px) {
+	.grid960 {
+		width: 100%; 
+		grid-template-columns: repeat(12, minmax(0,1fr));
+	}
+}
 
+@media (max-width: 600px) {
+	.cards .card {
+	grid-column: span 12;
+	}
+}
