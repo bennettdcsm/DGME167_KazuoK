@@ -182,7 +182,7 @@ a {
 
 .fullcard h2 {
 	color: #666;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .biophoto{
@@ -193,6 +193,95 @@ a {
 	margin-right: 50px;
 	margin-bottom: 20px;
 }
+
+.artcontainer {
+	display: flex;
+	align-items: center;
+}
+
+.artimagecontainer {
+	flex: 1;
+}
+
+.arttextcontainer {
+	flex: 1.5;
+	margin-left: 20px;
+	
+}
+
+.artimage {
+	width: 100%;
+	hight: auto;
+	cursor: pointer;
+	  /* Horizontal and vertical fade masks */
+  -webkit-mask-image: 
+    linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+    linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  mask-image: 
+    linear-gradient(to right, transparent, black 3%, black 97%, transparent),
+    linear-gradient(to bottom, transparent, black 3%, black 97%, transparent);
+
+  /* Intersect the two masks so all four edges fade */
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+.arttitle {
+	font-weight: 500;
+	font-size: 0.8rem;
+}
+
+.artdesc {
+	padding: 10px 0;
+}
+
+.arttarget {
+	font-style: oblique;
+}
+
+.artdivider {
+	margin: 30px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(105, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+  dialog {
+	margin: auto; 
+	padding: 0;
+	border: none;
+	border-radius: 8px;
+	background: transparent;
+	max-width: 90vw;
+	max-height: 90vh;
+	overflow: visible;
+  }
+
+  /* Darkened background behind the pop-up */
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+  }
+
+  dialog img {
+    display: block;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  #closeModal {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
 
 .servicestitle {
 	margin-bottom: 20px;
@@ -251,6 +340,7 @@ a {
 	overflow: hidden;
 	background-color: #000; /* Optional: darkens the fade effect */
 	text-decoration: none;
+	border-radius: 8px;
 }
 
 .hover-image {
@@ -449,5 +539,17 @@ footer {
 @media (max-width: 600px) {
 	.cards .card {
 	grid-column: span 12;
+	}
+	
+	.overlay-text {
+		opacity: 1;
+		background-color: #000000a0;
+		padding: 7px;
+		border-radius: 0.4rem;
+			
+	}
+	
+	.artcontainer {
+		flex-direction: column;
 	}
 }
