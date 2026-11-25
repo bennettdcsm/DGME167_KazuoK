@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kazuo's Portfolio Site</title>
+<script src="../scripts/imageoverlay.js" defer></script>
+<link href="../master.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	
+
+</head>
+
+<body>
+<div class="grid960 cards">	
+<header>
+		<a href="#homelink"><img class="logo" src="../images/logo01.png" alt="Logo of the website" /></a>
+		<h2 class="sitetitle" ></h2>
+</header>
+
+	
+<nav>
+	<ul>
+		<li><div class="dropdown"><a class="dropdown-btn" href="../index.html">Home</a></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="../about.html">About</a></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="../works.html">My Works</a>
+        <div class="dropdown-content">
+			<h5>graphic designs</h5>
+            <a href="record.html">vinyl record jacket</a>
+            <a href="poster.html">posters</a>
+            <a href="menu.html">menu &amp;&nbsp;brochure</a>
+			<a href="book.html">magazine spread &amp;&nbsp;book covers</a>
+			<a href="branding.html">branding</a>
+			<a href="mockup.html">product mockup</a>
+			<br>
+			<h5>others</h5>
+			<a href="acrylic.html">acrylic paintings</a>
+			<a href="uiux.html">ui/ux</a>
+			<a href="video.html">video &amp; audio</a>
+	  </div></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="../services.html">Services</a></div></li>
+		<li><div class="dropdown"><a class="dropdown-btn" href="../contact.html">Contact</a></div></li>
+	</ul></nav>
+
+	
+
+<main class="fullcard">
+<h2>Acrylic Paintings</h2>
+<div class="artcontainer">
+	<div class="artimagecontainer">
+		<img src="../images/artwork/paintings.jpg" data-full="../images/artwork/paintings_orig.jpg" class="artimage" alt="Three acrylic paintings">
+		<dialog id="imageModal">
+		  <button id="closeModal" aria-label="Close">✕</button>
+		  <img id="modalImage" src="../dummyvalue" alt="View of the original design">
+		</dialog>
+	</div>
+	<div class="arttextcontainer">
+		<p class="arttitle">Acrylic Color &amp; Optical Illusion Studies</p>
+		<p class="artdesc">This series of three acrylic studies explores foundational color theory through pointillism, geometric abstraction, and overlapping primary forms inspired by Bauhaus and Constructivist principles. Experimenting with complementary colors, optical mixing, and visual transparency, the collection demonstrates an exploration of chromatic harmony, value relationships, and compositional balance.</p>
+		<p class="arttarget">Target Audience: Fine arts faculty, foundation course instructors, and color theory students</p>
+	</div>	
+</div>
+
+<br>
+<a href="../works.html">← Back to Galary</a>
+</main>
+
+
+<footer>
+	<p class="footertext"></p>	
+</footer>
+</div>
+	
+	
+</body>
+</html>
