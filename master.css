@@ -519,6 +519,41 @@ footer {
   background-color: #bc2030;
 }
 
+.btn-slide {
+  display: inline-block;
+  position: relative;
+  padding: 5px 15px;
+  font-weight: bold;
+  color: #690000;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #690000;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.2s ease;
+}
+
+.btn-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #690000AA;
+  z-index: -1;
+  transform: translateX(100%); 
+  transition: transform 0.2s ease;
+}
+
+.btn-slide:hover {
+  color: #ffffff;
+}
+
+.btn-slide:hover::before {
+  transform: translateX(0);
+}
+
+
 @media (max-width: 960px) {
 	.grid960 {
 		width: 100%; 
